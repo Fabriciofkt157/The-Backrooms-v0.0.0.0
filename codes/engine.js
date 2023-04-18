@@ -1,13 +1,5 @@
 // Crie um objeto de configuração para o jogo
-var config = {
-    type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    scene: [MenuPrincipal]
-};
 
-// Crie um objeto de jogo
-var game = new Phaser.Game(config);
 
 class MenuPrincipal extends Phaser.Scene {
   preload() {
@@ -23,3 +15,13 @@ class MenuPrincipal extends Phaser.Scene {
   }
   
 }
+
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    scene: [MenuPrincipal]
+};
+
+// Crie um objeto de jogo
+var game = new Phaser.Game(config);
