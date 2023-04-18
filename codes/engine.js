@@ -7,7 +7,9 @@ class MenuPrincipal extends Phaser.Scene {
   }
 
   create() {
-    this.add.image(0, 0, 'bg').setOrigin(0, 0);
+    let bgImg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
+    bg.setInteractive();
+    bg.setScale(this.sys.game.config.width / image.width, this.sys.game.config.height / image.height);
   }
 
   update() {
@@ -18,8 +20,8 @@ class MenuPrincipal extends Phaser.Scene {
 
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: window.innerWidth,
+    height: window.innerHeight,
     scene: [MenuPrincipal]
 };
 
