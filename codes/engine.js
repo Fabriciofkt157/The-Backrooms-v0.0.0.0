@@ -10,15 +10,15 @@ var config = {
 var game = new Phaser.Game(config);
 
 class MenuPrincipal extends Phaser.Scene {
-  function preload() {
+  preload() {
     this.load.image('bg', 'assets/bg.png');
   }
 
-  function create() {
+  create() {
     this.add.image(0, 0, 'bg').setOrigin(0, 0);
   }
 
-  function update() {
+  update() {
     // Atualize objetos
   }
   
