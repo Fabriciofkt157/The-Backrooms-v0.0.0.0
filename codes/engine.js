@@ -17,11 +17,19 @@ class MenuPrincipal extends Phaser.Scene {
   }
   
 }
+var wdt = window.innerWidth, hgt = window.innerHeight;
+(function screenConfig () {
+  if(hgt > wdt){
+    var w = wdt, h = hgt;
+    hgt = w;
+    wdt = h;
+  }
+})(); 
 
 var config = {
     type: Phaser.AUTO,
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: wdt,
+    height: hgt,
     scene: [MenuPrincipal]
 };
 
