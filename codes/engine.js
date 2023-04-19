@@ -5,7 +5,7 @@ class MenuPrincipal extends Phaser.Scene {
   }
 
   create() {
-    var texto = this.add.text(, 10, wdt, { font: "16px Arial", fill: "#FFFFFF" });
+    var texto = this.add.text(10, 10, wdt, { font: "16px Arial", fill: "#FFFFFF" });
     /*let bgImg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
     bg.setInteractive();
     bg.setScale(this.sys.game.config.width / image.width, this.sys.game.config.height / image.height);
