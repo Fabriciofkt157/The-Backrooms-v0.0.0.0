@@ -15,14 +15,21 @@ class MenuPrincipal extends Phaser.Scene {
   update() {
     // Atualize objetos
   }
-  
 }
-var wdt = window.innerWidth, hgt = window.innerHeight;
+var wdt = window.innerWidth, hgt = window.innerHeight, propor;
 (function screenConfig () {
   if(hgt > wdt){
     var w = wdt, h = hgt;
     hgt = w;
     wdt = h;
+  }
+  if (wdt > hgt + hgt * 0.80){
+    propor = 20.9
+    //20:9
+  }
+  else {
+    propor = 16.9
+    //16:9
   }
 })(); 
 
