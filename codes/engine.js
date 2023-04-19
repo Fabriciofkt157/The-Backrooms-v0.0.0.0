@@ -1,5 +1,3 @@
-// Crie um objeto de configuração para o jogo
-
 
 class MenuPrincipal extends Phaser.Scene {
   preload() {
@@ -7,9 +5,11 @@ class MenuPrincipal extends Phaser.Scene {
   }
 
   create() {
-    let bgImg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
+    var texto = this.add.text(, 10, wdt, { font: "16px Arial", fill: "#FFFFFF" });
+    /*let bgImg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
     bg.setInteractive();
     bg.setScale(this.sys.game.config.width / image.width, this.sys.game.config.height / image.height);
+*/
   }
 
   update() {
